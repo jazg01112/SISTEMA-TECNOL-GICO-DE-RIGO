@@ -1,0 +1,13 @@
+<h2>Registrar producto</h2>
+$if mensaje:
+    <p><strong>$mensaje</strong></p>
+<form method="POST" action="/nuevo">
+    <p>ID: <input type="number" name="id" required></p>
+    <p>Nombre: <input type="text" name="nombre" required></p>
+    <p>Categoría: <input type="text" name="categoria" required></p>
+    <p>Marca: <input type="text" name="marca" required></p>
+    <p>Precio: <input type="number" name="precio" step="0.01" min="0" required></p>
+    <p>Existencia: <input type="number" name="existencia" min="0" required></p>
+    <button type="submit">Guardar producto</button>
+</form>
+<p><a href="/">Regresar al catálogo</a></p>
